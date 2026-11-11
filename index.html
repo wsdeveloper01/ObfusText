@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beranda | ObfusText</title>
+<meta name="description" content="Mainan steganografi teks: samarkan pesan di antara karakter acak, lalu buka lagi. Ditemani Obi si hantu kecil.">
+<meta name="theme-color" content="#fff3c4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="home">
+
+<header class="top">
+    <a class="logo" href="./">
+        <span data-mascot="happy" data-body="#7ee8b8" data-decor></span>
+        <span>ObfusText</span>
+    </a>
+    <nav class="nav" aria-label="Menu utama">
+        <a href="./" aria-current="page">Beranda</a>
+        <a href="samarkan">Samarkan</a>
+        <a href="buka">Buka samaran</a>
+    </nav>
+</header>
+
+<main class="main">
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Main petak umpet sama huruf!</h1>
+        <p class="lede">Sembunyikan pesanmu di antara tumpukan karakter acak, lalu buka lagi kapan saja. Seru buat iseng bareng teman, bikin gebetan penasaran, atau ngerjain grup keluarga.</p>
+        <div class="cta">
+            <a class="btn btn-pink" href="samarkan">Samarkan pesan</a>
+            <a class="btn btn-sky" href="buka">Buka samaran</a>
+        </div>
+    </div>
+    <div class="hero-art">
+        <div class="speech" id="quip" aria-live="polite">Halo! Aku Obi.</div>
+        <div data-mascot="happy" data-body="#7ee8b8" data-poke></div>
+        <p class="poke-hint">(coba colek Obi)</p>
+    </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
+
+<section class="features" aria-label="Pilih fitur">
+    <a class="feature pink" href="samarkan">
+        <div class="feature-art" data-mascot="spy" data-body="#ffffff" data-decor></div>
+        <h2>Samarkan</h2>
+        <p>Tulis pesan, dan Obi akan menyelipkan lima karakter acak di depan setiap hurufnya. Pakai kacamata hitam biar terlihat profesional.</p>
+        <span class="btn btn-white">Mulai menyamarkan</span>
+    </a>
+    <a class="feature sky" href="buka">
+        <div class="feature-art" data-mascot="detective" data-body="#ffffff" data-decor></div>
+        <h2>Buka samaran</h2>
+        <p>Tempel sandi yang kamu terima, dan huruf aslinya akan ditemukan kembali. Obi sudah siap dengan kaca pembesar.</p>
+        <span class="btn btn-white">Mulai membuka</span>
+    </a>
+</section>
+
+<section class="card how">
+    <h2>Begini cara kerjanya</h2>
+    <div class="demo" aria-label="Contoh: kata Hai disamarkan menjadi karakter acak">
+        <span class="n">q7!Zp</span><b>H</b><span class="n">{m2.x</span><b>a</b><span class="n">T&amp;b9L</span><b>i</b>
+    </div>
+    <ol class="steps">
+        <li>Tulis pesan asli, misalnya “Hai”.</li>
+        <li>Setiap huruf diberi lima karakter acak di depannya. Huruf asli selalu jadi karakter ke-6, ke-12, ke-18, dan seterusnya.</li>
+        <li>Untuk membukanya, ambil saja karakter pada posisi kelipatan enam itu. Gampang, kan? Obi aja bisa.</li>
+    </ol>
+</section>
+
+<section class="card facts">
+    <h2>Fakta nggak penting dari Obi</h2>
+    <p id="fact" class="fact">Memuat fakta...</p>
+    <button type="button" class="btn btn-yellow btn-small" id="nextFact">Fakta lain, dong</button>
+</section>
+
+</main>
+
+<footer class="foot">
+    <p>Cuma buat seru-seruan. Ini bukan enkripsi: siapa pun yang tahu polanya bisa membuka pesannya, jadi jangan pakai untuk rahasia sungguhan. Obi juga nggak bisa jaga rahasia kalau digelitik.</p>
+    <p>&copy; <span id="year">2026</span> ObfusText</p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
