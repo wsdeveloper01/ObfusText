@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samarkan | ObfusText</title>
+<meta name="description" content="Samarkan pesanmu di balik lima karakter acak per huruf.">
+<meta name="theme-color" content="#fff3c4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="samarkan">
+
+<header class="top">
+    <a class="logo" href="./">
+        <span data-mascot="happy" data-body="#7ee8b8" data-decor></span>
+        <span>ObfusText</span>
+    </a>
+    <nav class="nav" aria-label="Menu utama">
+        <a href="./">Beranda</a>
+        <a href="samarkan" aria-current="page">Samarkan</a>
+        <a href="buka">Buka samaran</a>
+    </nav>
+</header>
+
+<main class="main">
+
+<section class="head">
+    <div class="head-art" id="headArt" data-mascot="spy" data-body="#ffa8c8" data-poke></div>
+    <div>
+        <h1>Samarkan pesanmu</h1>
+        <p class="lede">Tulis apa saja. Setiap huruf akan disembunyikan di balik lima karakter acak.</p>
+        <div class="speech inline" id="quip" aria-live="polite">Siap menyamar? Ayo mulai!</div>
+    </div>
+</section>
+
+<form class="card" id="form" autocomplete="off">
+    <label class="field" for="teks">
+        <span>Pesan asli</span>
+        <span class="count" data-count-for="teks">0 karakter</span>
+    </label>
+    <textarea id="teks" name="teks" spellcheck="false" placeholder="Contoh: Ketemu di kantin jam 12 ya!"></textarea>
+    <div class="row-tools">
+        <button type="button" class="btn btn-yellow btn-small" id="contoh">Isi contoh ngasal</button>
+        <button type="button" class="btn btn-white btn-small" id="hapus">Kosongkan</button>
+    </div>
+    <button type="submit" class="btn btn-pink btn-block">Samarkan sekarang</button>
+    <p class="hint">Tips: tekan <kbd>Ctrl</kbd> + <kbd>Enter</kbd> biar lebih cepat.</p>
+</form>
+
+<section class="card result mint" id="hasil" aria-live="polite" hidden>
+    <div class="notice" id="notice" hidden></div>
+    <div id="resultBody" hidden>
+        <div class="result-head">
+            <h2>Hasil samaran <span class="meta" id="meta"></span></h2>
+            <div class="tools">
+                <label class="toggle"><input type="checkbox" id="sorot" checked> Tandai huruf asli</label>
+                <button type="button" class="btn btn-white btn-small" id="salin">Salin</button>
+                <button type="button" class="btn btn-white btn-small" id="wa">Kirim ke WA</button>
+            </div>
+        </div>
+        <div class="out sorot" id="out"></div>
+    </div>
+</section>
+
+<div class="next" id="next" hidden>
+    <button type="button" class="btn btn-sky" id="toBuka">Coba buka lagi di halaman Buka samaran</button>
+</div>
+
+</main>
+
+<footer class="foot">
+    <p>Cuma buat seru-seruan. Ini bukan enkripsi: siapa pun yang tahu polanya bisa membuka pesannya, jadi jangan pakai untuk rahasia sungguhan. Obi juga nggak bisa jaga rahasia kalau digelitik.</p>
+    <p>&copy; <span id="year">2026</span> ObfusText</p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
